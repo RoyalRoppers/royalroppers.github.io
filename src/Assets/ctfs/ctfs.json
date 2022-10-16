@@ -1,0 +1,186 @@
+{
+  "ctfs": [
+    {
+      "place": "12",
+      "link": "https://ctftime.org/event/1728",
+      "ctf_name": "LakeCTF Qualifications",
+      "logo": "/media/cache/5e/e3/5ee3dccc1b28b5f04bdf2f7b871b1d07.png",
+      "description": "\nLakeCTF is the first CTF hosted by polygl0ts (and friends), the CTF team of EPFL.\nFor the occasion of the 20th anniversary of the IC Faculty at EPFL we organize a CTF with on-site finals.\nChallenge Categories : Pwn, Rev, Crypto, Web, and Misc\n"
+    },
+    {
+      "place": "12",
+      "link": "https://ctftime.org/event/1625",
+      "ctf_name": "DownUnderCTF 2022 (Online) ",
+      "logo": "/media/cache/34/ed/34ed0b89578f421e1c64a73c2c63eca5.png",
+      "description": "\nDownUnderCTF is the largest online Australian run Capture The Flag (CTF) competition with over 4000+ registered users and over 2100+ registered teams (2021). Its main goal is to try to up-skill the next generation of potential Cyber Security Professionals and increase the CTF community's size here in Australia. Prizes are only for Australian Secondary or Tertiary school students. However, our CTF is online and open for anyone to play worldwide.\nWe hope to see you all from the 23rd to the 25th of September!\nInfra sponsored by g.co/cloud\n"
+    },
+    {
+      "place": "2",
+      "link": "https://ctftime.org/event/1761",
+      "ctf_name": "SEC-T 0x0Expand CTF 2022",
+      "logo": "/media/cache/68/c2/68c24330d22d8bf48e735a1617dd0e2a.png",
+      "description": "\nSEC-T is an affordable, non-profit, English speaking, two days, single track information security/hacking conference taking place in late summer every year in Stockholm, Sweden.\nThis is the CTF competition for SEC-T 2022, aka. SEC-T 0x0Expand.\n"
+    },
+    {
+      "place": "87",
+      "link": "https://ctftime.org/event/1683",
+      "ctf_name": "CakeCTF 2022",
+      "logo": "/media/cache/da/84/da8419d33bbddf6df245f1d2973180b7.png",
+      "description": "\nCakeCTF is a *casual* Jeopardy-style Capture The Flag competition hosted by yoshiking, theoremoon, and ptr-yudai. There will be some challenges of pwn, web, rev, crypto, and so on. These challenges range in difficulty from beginner to intermediate level.\nInfra sponsored by goo.gle/ctfsponsorship\n"
+    },
+    {
+      "place": "50",
+      "link": "https://ctftime.org/event/1697",
+      "ctf_name": "Balsn CTF 2022",
+      "logo": "/media/cache/f9/5b/f95b166f7117cb7e4337c3beb0bf1145.png",
+      "description": "\nRegistration: https://balsnctf.comOrganizers: Balsn (https://balsn.tw/)Twitter: @balsnctf (https://twitter.com/balsnctf)\n"
+    },
+    {
+      "place": "116",
+      "link": "https://ctftime.org/event/1676",
+      "ctf_name": "MapleCTF 2022",
+      "logo": "/media/cache/76/0b/760b886d82f5ff1a3a6009ce5a0ebc2d.png",
+      "description": "\nMaple Bacon's inaugural CTF! Featuring web, pwn, rev, crypto and more.\nPrizes sponsored by https://zellic.ioInfrastructure sponsored by https://goo.gle/ctfsponsorship\nDate: Aug 27, 00:00 UTC to Aug 29, 00:00 UTC\nDiscord link: https://discord.gg/YnqKwXuwnP\n"
+    },
+    {
+      "place": "11",
+      "link": "https://ctftime.org/event/1475",
+      "ctf_name": "Midnight Sun CTF 2022 Finals",
+      "logo": "/media/cache/fe/28/fe285a50a250ddf950a814e149f0768c.png",
+      "description": "\nMidnight Sun CTF is HackingForSoju's annual CTF event to promote competition around the world.\nWHEN and WHEREThe final event is in Sweden from August 20th - 21st, with the online qualifier running from April 2nd - 3rd.\nhttps://discord.gg/xMuRxub4CX\n"
+    },
+    {
+      "place": "22",
+      "link": "https://ctftime.org/event/1604",
+      "ctf_name": "SHELLCTF 2022",
+      "logo": "/media/cache/e8/5b/e85b3c2ee4bccb058eb3924426f9b7d2.png",
+      "description": "\n!! Registrations Open !!A beginner-friendly CTF, Hosted By S.H.E.L.L : Cybersecurity Club of VNIT.With an objective to get the enthusiastic students familiar with the basics, along with a few hard and fun challenges for the professionals.\nThe challenges will range from Easy to Hard in difficulty and will be segregated into topics :- Cryptography- Reverse Engineering- Web Security- Forensics- Miscellaneous \nSponsored By: Burp bounty pro and Zsecurity\n"
+    },
+    {
+      "place": "17",
+      "link": "https://ctftime.org/event/1546",
+      "ctf_name": "WeCTF 2022",
+      "logo": "/media/cache/c5/b0/c5b0469f33f6bdc32e4f00b5e75afb83.png",
+      "description": "\nWeCTF is a Web-only CTF that has both intro-level challenges and diabolical ones.\nInfra sponsored by goo.gle/ctfsponsorship\n"
+    },
+    {
+      "place": "220",
+      "link": "https://ctftime.org/event/1562",
+      "ctf_name": "Hack-A-Sat 3 Qualifiers",
+      "logo": "/media/cache/a0/97/a09784f7751002b402287ea7f9302ef5.png",
+      "description": ""
+    },
+    {
+      "place": "42",
+      "link": "https://ctftime.org/event/1615",
+      "ctf_name": "m0leCon CTF 2022 Teaser",
+      "logo": "/media/cache/a6/bc/a6bc5182756534a1b559e80352604cf5.png",
+      "description": "\nm0leCon CTF 2022 Teaser is an online jeopardy-style CTF organized by pwnthem0le. Top 5 teams will be invited to the final event, that will take place in Fall 2022 at Politecnico di Torino, alongside with the m0leCon conference.\nFinals will be also open to everyone that takes part in the conference, up to the capacity of the rooms.\ninfo: [email\u00a0protected]\n"
+    },
+    {
+      "place": "14",
+      "link": "https://ctftime.org/event/1495",
+      "ctf_name": "San Diego CTF 2022",
+      "logo": "/media/cache/75/30/75305508227b2089d02876d69f72ec9c.png",
+      "description": "\nSan Diego CTF, also known as SDCTF, is an annual Capture the Flag competition hosted by undergraduates at the University of California, San Diego (UCSD). The competition will be jeopardy-style and run in the 48 hour period from May 6 to May 8, 2022. We encourage participation from teams on and off campus, of all ages and backgrounds.\nThis event is hosted yearly by ACM Cyber, the chief cybersecurity organization on campus at UC San Diego. This yearly competition allows us to train our members, build our internal resources, and give back to the greater cybersecurity community.\nThere is no team size limit and we use static scoring. Challenges vary across the disciplines of Open Source Intelligence, Cryptography, Web Hacking, Reverse Engineering, Binary Exploitation, Jail Escapes, Forensic Analysis, and others. At the end of a 48 hour period, the teams participating are ranked by number of points, with ties broken by who reached that number of points first.\nInfra sponsored by goo.gle/ctfsponsorship. \n"
+    },
+    {
+      "place": "63",
+      "link": "https://ctftime.org/event/1588",
+      "ctf_name": "\u00e5ngstromCTF 2022",
+      "logo": "/media/cache/f9/5b/f95bf92defd47c65a0f14f62fa3acd17.png",
+      "description": "\nGeared primarily towards high school students but with a very wide range of challenge difficulty. A huge thanks to our sponsors, Trail of Bits, OtterSec, and Binary Ninja for making this all possible. Infra sponsored by goo.gle/ctfsponsorship.\n"
+    },
+    {
+      "place": "69",
+      "link": "https://ctftime.org/event/1630",
+      "ctf_name": "NahamCon CTF 2022",
+      "logo": "/media/cache/3a/81/3a81d5f2a7fe1cc331afe580722da589.png",
+      "description": "\nFrom the developers of VirSecCon, [email\u00a0protected], BsidesBOS, GRIMMCon CTF and more, we bring you NahamCon CTF 2022!\nRegistration for the CTF is accessible at https://ctf.nahamcon.com \nFor information on the NahamCon conference, check out https://nahamcon.com\nSpecial thank you to all of the events sponsors!\n"
+    },
+    {
+      "place": "3",
+      "link": "https://ctftime.org/event/1632",
+      "ctf_name": "Incognito 3.0",
+      "logo": "/media/cache/da/e7/dae76aff86a15c06258d74ae6e0b0af6.png",
+      "description": "\nIncognito 3.0 is a CTF competition being held in the Equinox-Annual Technical Fest of IIIT Lucknow. It is open for participants all around the globe to take part in and win exciting prizes.\nSponsored By Equinox\n"
+    },
+    {
+      "place": "3",
+      "link": "https://ctftime.org/event/1557",
+      "ctf_name": "TAMUctf 2022",
+      "logo": "/media/cache/63/f4/63f45e2819102f8dce0192e17164aa27.png",
+      "description": "\nFriday, April 15th 12:00 PM CST to Sunday, April 17th 12:00 PM CST.\nTexas A&M University CTF event.\nThis CTF is geared more towards university and high school students, but anyone may compete!\nhttps://cybersecurity.tamu.edu/\nDiscord: https://discord.gg/8DFfzbnj\n"
+    },
+    {
+      "place": "192",
+      "link": "https://ctftime.org/event/1542",
+      "ctf_name": "PlaidCTF 2022",
+      "logo": "/media/cache/58/ef/58efcd444089465a39625edf1c5ce1fc.png",
+      "description": "\nPlaid CTF :: Hosted by Plaid Parliament of Pwning\nApril 8 21:00 UTC - April 9 21:00 UTC\n"
+    },
+    {
+      "place": "28",
+      "link": "https://ctftime.org/event/1474",
+      "ctf_name": "Midnight Sun CTF 2022 Quals",
+      "logo": "/media/cache/17/9d/179d16d8f157604eb446b83ec999142c.png",
+      "description": "\nMidnight Sun CTF is HackingForSoju's annual CTF event to promote competition around the world.\nWHEN and WHEREThe final event is in Sweden from June 18th - 19th, with the online qualifier running from April 2nd - 3rd.\nhttps://discord.gg/xMuRxub4CX\n"
+    },
+    {
+      "place": "46",
+      "link": "https://ctftime.org/event/1555",
+      "ctf_name": "zer0pts CTF 2022",
+      "logo": "/media/cache/73/6e/736ee58c0d427345976c92dce5b8d399.png",
+      "description": "\nThe third zer0pts CTF event is coming this March!\nWhat you'll see: exciting challenges of varying difficulty and categories (pwn, crypto, web, reversing, and misc)What you'll never see: guessy challenges\nDuration: 36 hours from March 19th (Saturday) 00:00 UTC\n"
+    },
+    {
+      "place": "23",
+      "link": "https://ctftime.org/event/1579",
+      "ctf_name": "FooBar CTF 2022",
+      "logo": "/media/cache/2b/5e/2b5e2e13144af5caa3e8b3aa00ea9fd2.png",
+      "description": "\nFooBarCTF is a 24 hrs world-wide Capture The Flag (CTF) competition organized by a group of InfoSec enthusiasts from NIT Durgapur during Aarohan, the annual techno-management fest of NIT Durgapur.\n\n"
+    },
+    {
+      "place": "25",
+      "link": "https://ctftime.org/event/1538",
+      "ctf_name": "Codegate CTF 2022 Preliminary",
+      "logo": "/media/cache/72/e3/72e30fa751acf026cda1e67366dedc3e.png",
+      "description": "\nRULES\n1. CODEGATE 2022 CTF runs in 3 division : Junior, University, General\n2. Qualification of participation- Junior Division    Solo exhibition     Participants are limited to those born after 2003- University Division    Maximum team size is 4 members    University students    Only for Republic of Korea University (In other case is General Division)    There is a validation process for the teams that advance to the final round- General Divison     Maximum team size is 4 members     Everyone else\n3. These actions below are subject to disqualification after immediate notice.- Sharing FLAG values or challenge solutions- Preventing other people from having fun(including DoS, DDoS, etc)- Brute Forcing FLAG values to *.codegate2022.org FLAG system- Intentionally prevent other teams from flagging.- Ignore the qualifications to participate to participate the other division.(General person who pretends to be a university student participate in the University Division.)\n4. If you find any bug in system, report to [email\u00a0protected]\n5. After preliminary round, you must submit it by [email\u00a0protected] within 24 hours.\n6. Participants who must submit are write-ups:- General Division : top 15 teams- University Division : top 15 teams- Junior Division : top 25 teams\n7. There is no necessary to set up VPN to play CODEGATE 2022 CTF.\n8. Official Channel : Discord\n9. After Preminary Round ends, The Scoreboard doesn't confirm final teams to go Final Round. Final teams will be announced.\n10. Final Round teams are- Junior Division : top 20 teams- University Division : 10 teams(top 9 teams, 1 team from last winner)- General Division : 10 teams(top 9 teams, 1 team from last winner)\n"
+    },
+    {
+      "place": "57",
+      "link": "https://ctftime.org/event/1564",
+      "ctf_name": "MHSCTF 2022",
+      "logo": "/media/cache/4e/e2/4ee230e29af2ff22eecd7cf72aecbe24.png",
+      "description": "\nMentor High School's CTF challenge! Open to anyone, anywhere (eligibility rules exist for prizes).\nThanks to our sponsors:- Wolfram Research- Binary Ninja- Trail of Bits- Hak5\nJoin our Discord! https://discord.gg/XPk6xTDtFV\n"
+    },
+    {
+      "place": "7",
+      "link": "https://ctftime.org/event/1518",
+      "ctf_name": "VU CYBERTHON 2022",
+      "logo": "/media/cache/35/bd/35bd0e4aaa188e35e0d4e57416065e81.png",
+      "description": "\nParticipants will get an access to the cyber security tournament system and they will have 24 hours to solve CTF challenges.\n"
+    },
+    {
+      "place": "45",
+      "link": "https://ctftime.org/event/1541",
+      "ctf_name": "DiceCTF 2022",
+      "logo": "/media/cache/fe/d9/fed9b5d4cab886d0ca6033e365158300.png",
+      "description": "\nWin $5,000 in prizes from DiceCTF 2022, a cybersecurity competition by DiceGang!\nJoin our Discord server: https://discord.com/invite/CbCXtrDE5m?event=935026219014037520\n\n"
+    },
+    {
+      "place": "12",
+      "link": "https://ctftime.org/event/1505",
+      "ctf_name": "Insomni'hack teaser 2022",
+      "logo": "/media/cache/51/a7/51a7197c820d41930f620195eb2ed346.png",
+      "description": "\nCategories will be Crypto, Forensic, Pwn, Reverse and Web.\nThere will be no bonus points so the final ranking will be determined based on the time of the last challenge solved, ie first come first served.\n"
+    },
+    {
+      "place": "17",
+      "link": "https://ctftime.org/event/1545",
+      "ctf_name": "KnightCTF 2022",
+      "logo": "/media/cache/d4/81/d481151544dd7a4d57d850a75362de8c.png",
+      "description": "\nThere's a first time for everything.For Bangladesh and for Knight Squad as well, it's the first time to conduct an International CTF competition.\nYeah, you read that right!\nKnight Squad is gonna conduct an International CTF competition on January 20, 2022.\nThere will be challenges with basic concepts which transition into more complex and advanced challenges, ensuring that everyone has something that they can enjoy.\nEvent Website : https://knightctf.com/\nDiscord : https://discord.gg/6KayH7cRAP\nOur Sponsors-------------------HostMantisCybranceeNS TechValleyNitro-CloudTaskadeShockHostingShodanGive My CertificateBurpBountyzSecurity\nIf you want to sponsor the competition, please contact us at [email\u00a0protected]\n"
+    }
+  ]
+}

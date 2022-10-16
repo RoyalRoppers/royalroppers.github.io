@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree');
+
+@layer components {
+    .default-text {
+        @apply text-snowbright
+    }
+
+    body {
+        background-color: var(--primary);
+    }
+
+    :root {
+        --primary: #263c5a;
+        --secondary: #f9c867;
+    }
+}
