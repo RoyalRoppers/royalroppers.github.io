@@ -1,7 +1,7 @@
 import json from "../Assets/events/events.json"
 import rr from "../Assets/logo/logo.svg"
 
-const Event = function ({company, description, logo}) {
+const Event = function ({ company, description, logo }) {
     return (
         <div
             className="max-w-lg px-5 py-3 transform transition duration-500 hover:scale-105 hover:bg-[#3b5998]/90 rounded-lg">
@@ -9,7 +9,7 @@ const Event = function ({company, description, logo}) {
                 <div>
                     <h4 className="mb-2 text-2xl font-bold text-white">{company}</h4>
                 </div>
-                <img className="h-24" width="200px" src={logo} alt={rr}/>
+                <img className="h-24" width="200px" src={logo} alt={rr} />
             </div>
             <p className="text-lg text-gray-400">{description}</p>
         </div>
@@ -26,8 +26,8 @@ const Events = function () {
                 <ol className="border-gray-200 list-none">
                     {json.event.map((e) => {
                         return (<li className="ml-4" key={e.event_name}>
-                                <div
-                                    className="relative w-4 h-4"/>
+                            <div
+                                className="relative w-4 h-4" />
                             <time
                                 className="mb-1 text-xl font-normal leading-none text-gray-400 dark:text-gray-500">
                                 {e.date}
@@ -35,8 +35,8 @@ const Events = function () {
                             <Event
                                 company={e.event_name}
                                 description={e.description}
-                                logo={e.logo ? e.logo : rr}/>
-                            </li>)
+                                logo={e.logo ? e.logo : rr} />
+                        </li>)
                     })}
                 </ol>
             </div>

@@ -8,12 +8,12 @@ import Footer from "./Components/footer";
 export default function App() {
     return (
         <div>
-            <Header/>
-            <About/>
-            <Events/>
-            <Ctfs/>
-            <Sponsors/>
-            <Footer/>
+            <Header />
+            <About />
+            <Events />
+            <Ctfs />
+            <Sponsors />
+            <Footer />
         </div>
     );
 }

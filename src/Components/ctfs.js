@@ -17,7 +17,7 @@ function ordinal(number) {
     return (number + suffix);
 }
 
-const CTF = function ({name, logo, description, link, place}) {
+const CTF = function ({ name, logo, description, link, place }) {
     return (
         <div
             className="max-w-sm bg-gray-900 rounded-lg shadow-md transform transition duration-500 hover:hover:bg-gray-800 hover:scale-105 flex flex-col justify-between">
@@ -28,12 +28,13 @@ const CTF = function ({name, logo, description, link, place}) {
                             {name}
                         </h5>
                     </div>
-                    <img className="my-2 rounded-lg w-full h-32 object-none" src={logo} alt=""/>
+                    <img className="my-2 rounded-lg w-full h-32 object-none" src={logo} alt="" />
                     <p className="mb-3 font-normal text-gray-200">{description}</p>
                 </div>
             </a>
             <p className={"text-white text-center border-2 border-gray-200 m-5"}>{ordinal(place)} place</p>
-        </div>);
+        </div>
+    );
 }
 
 const Ctfs = function () {
@@ -44,8 +45,7 @@ const Ctfs = function () {
             </div>
             <div
                 className="p-4 grid grid-cols-1 sm:grid-cols-1 sm:p-4 md:grid-cols-2 md:p-6 lg:grid-cols-3 lg:p-8 xl:grid-cols-3 xl:p-10 gap-8 m-auto max-w-6xl">
-
-                {json.ctfs.filter((e)=> {return e.place < cutoff_threshold}).slice(0, 9).map((e) => {
+                {json.ctfs.filter((e) => { return e.place < cutoff_threshold }).slice(0, 9).map((e) => {
                     return (
                         <CTF
                             name={e.ctf_name}
@@ -56,8 +56,6 @@ const Ctfs = function () {
                         />
                     )
                 })}
-
-
             </div>
         </div>
     );
