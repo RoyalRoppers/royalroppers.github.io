@@ -1,8 +1,8 @@
+#!/usr/bin/env python3
 import json
 import requests
 from bs4 import BeautifulSoup
 import bs4
-
 
 def parser(i: int, table_entry: bs4.element.Tag) -> dict:
     print(i)
@@ -37,6 +37,7 @@ print(dump)
 ctfs = [parser(i, e) for i, e in enumerate(dump)]
 ctfs = [i for i in ctfs if i]
 final = {'ctfs': ctfs}
-print(json.dumps(final))
+print(json.dumps(final, sort_keys=True, indent=4))
+print(len(ctfs), "CTFs scraped")
 with open('ctfs.json', 'w') as f:
-    f.write(json.dumps(final))
+    f.write(json.dumps(final, sort_keys=True, indent=4))

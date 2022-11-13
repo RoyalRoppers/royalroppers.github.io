@@ -1,4 +1,3 @@
-import logo from "../Assets/logo/logo.svg";
 import json from "../Assets/ctfs/ctfs.json"
 
 const cutoff_threshold = Infinity;
@@ -24,7 +23,7 @@ const CTF = function ({ name, logo, description, link, place }) {
                 <h5 className="text-center mb-2 text-xl font-bold tracking-tight text-white">
                     {name}
                 </h5>
-                <img className="my-2 rounded-lg w-full h-32 object-none" src={logo} alt="" />
+                <img className="my-2 rounded-lg w-full object-none" style={{height: "150px"}} src={logo} alt="" />
                 <p className="mb-3 font-normal text-gray-200">{description}</p>
             </div>
             <p className="text-white text-center border-2 border-gray-200 m-5">{ordinal(place)} place</p>
@@ -40,12 +39,12 @@ const Ctfs = function () {
             </div>
             <div
                 className="p-4 grid justify-items-center grid-cols-1 md:grid-cols-2 md:p-6 lg:grid-cols-3 lg:p-8 xl:p-10 gap-8 m-auto max-w-6xl">
-                {json.ctfs.filter((e) => { return e.place < cutoff_threshold }).slice(0, 9).map((e) => {
+                {json.ctfs.filter((e) => { return e.place < cutoff_threshold }).map((e) => {
                     return (
                         <CTF
                             name={e.ctf_name}
                             description={e.description}
-                            logo={e.logo ? `http://ctftime.org${e.logo}` : logo}
+                            logo={e.logo}
                             link={e.link ? e.link : "http://royalroppers.team"}
                             place={e.place}
                         />

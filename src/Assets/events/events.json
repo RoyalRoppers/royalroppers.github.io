@@ -1,12 +1,6 @@
 {
   "event": [
     {
-      "event_name": "Omegapoint",
-      "date": "03/11",
-      "logo": "https://images.squarespace-cdn.com/content/v1/5d725bb5e71af8000106fe69/1592828789780-DBDZFBHO6T73IXR7I3ZL/IMG_3351.png?format=1500w",
-      "description": "We are going to have an event with Omegapoint on November 3rd! "
-    },
-    {
       "event_name": "Yearly meeting",
       "date": "03/12",
       "logo": "",
