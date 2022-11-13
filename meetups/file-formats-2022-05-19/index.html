@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="../reveal/dist/reset.css">
+		<link rel="stylesheet" href="../reveal/dist/reveal.css">
+		<link rel="stylesheet" href="../reveal/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>File formats</h1>
+					Mattias Grenfeldt
+				</section>
+				<section data-background-image="https://media1.giphy.com/media/FDu0k1BETbTjeH4xXx/giphy.gif?cid=ecf05e47wz6szznsm1eky3wg7cenm4ytixc3q1tpz6n6tp5w&rid=giphy.gif&ct=g">
+					<h2 style="color: rgb(245, 6, 6);">the file</h2>
+				</section>
+				<section>
+					<h3>File properties</h3>
+					<ul>
+						<li class="fragment">Name (and Extension)</li>
+						<li class="fragment">Path</li>
+						<li class="fragment">Date created/modified/accessed</li>
+						<li class="fragment">Content</li>
+					</ul>
+				</section>
+				<section>
+					<h3>File content</h3>
+					<ul>
+						<li class="fragment" data-fragment-index="1">List of bytes</li>
+						<li class="fragment" data-fragment-index="2">View with hex editor:</li>
+						<ul class="fragment" data-fragment-index="2">
+							<li>xxd &lt;file&gt;</li>
+							<li>hexdump -C &lt;file&gt;</li>
+							<li>HxD</li>
+							<li>010 Editor</li>
+						</ul>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Text files</h3>
+					<pre data-id="hellotxt" style="width: 100%"><code data-trim class="language-plaintext">
+$ cat hello.txt
+hello there!
+What a wonderful day!
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h3>Text files</h3>
+					<pre data-id="hellotxt" style="width: 100%"><code data-trim class="language-plaintext">
+$ cat hello.txt
+hello there!
+What a wonderful day!
+$ xxd hello.txt
+00000000: 6865 6c6c 6f20 7468 6572 6521 0a57 6861  hello there!.Wha
+00000010: 7420 6120 776f 6e64 6572 6675 6c20 6461  t a wonderful da
+00000020: 7921 0a                                  y!.
+					</code></pre>
+				</section>
+				<section data-auto-animate data-auto-animate-restart>
+					<h3>Text vs. binary files</h3>
+					<pre data-id="numlist" style="width: 100%"><code data-trim class="language-plaintext">
+$ ./textlist.py 4 5 2
+4 5 2
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h3>Text vs. binary files</h3>
+					<pre data-id="numlist" style="width: 100%"><code data-trim class="language-plaintext">
+$ ./textlist.py 4 5 2
+4 5 2
+$ ./textlist.py 4 5 2 | xxd
+00000000: 3420 3520 320a                           4 5 2.
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h3>Text vs. binary files</h3>
+					<pre data-id="numlist" style="width: 100%"><code data-trim class="language-plaintext">
+$ ./textlist.py 4 5 2
+4 5 2
+$ ./textlist.py 4 5 2 | xxd
+00000000: 3420 3520 320a                           4 5 2.
+$ ./binarylist.py 4 5 2
+LIST
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h3>Text vs. binary files</h3>
+					<pre data-id="numlist" style="width: 100%"><code data-trim class="language-plaintext">
+$ ./textlist.py 4 5 2
+4 5 2
+$ ./textlist.py 4 5 2 | xxd
+00000000: 3420 3520 320a                           4 5 2.
+$ ./binarylist.py 4 5 2
+LIST
+$ ./binarylist.py 4 5 2 | xxd
+00000000: 4c49 5354 0300 0000 0400 0000 0500 0000  LIST............
+00000010: 0200 0000                                ....
+					</code></pre>
+				</section>
+				<section>
+					<h3>Binary formats</h3>
+					<pre data-id="numlist" style="width: 100%"><code data-trim class="language-plaintext">
+$ ./binarylist.py 4 5 2 | xxd
+00000000: 4c49 5354 0300 0000 0400 0000 0500 0000  LIST............
+00000010: 0200 0000                                ....
+					</code></pre>
+					<ul>
+						<li>Magic bytes "LIST"</li>
+						<li>Size of list</li>
+						<li>Numbers</li>
+						<li>All numbers stored as 32-bit little endian</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Sidetrack:<br>What is the type of a file?</h3>
+					<p>Three views:</p>
+					<ol>
+						<li class="fragment" data-fragment-index="1">Extension <span class="fragment" data-fragment-index="4" style="color: red;">Wrong</span></li>
+						<li class="fragment" data-fragment-index="2">Magic bytes <span class="fragment" data-fragment-index="5" style="color: yellow;">Most often good</span></li>
+						<li class="fragment" data-fragment-index="3">However you interpret it <br><span class="fragment" data-fragment-index="6" style="color: lightgreen;">Most correct, not so useful</span></li>
+					</ol>
+				</section>
+				<section>
+					<h3>Real binary files</h3>
+					<pre style="width: 100%"><code data-trim class="language-plaintext">
+$ xxd a.png | head
+00000000: 8950 4e47 0d0a 1a0a 0000 000d 4948 4452  .PNG........IHDR
+00000010: 0000 00fa 0000 003c 0806 0000 004f 5da7  .......<.....O].
+00000020: 9400 0001 8469 4343 5049 4343 2070 726f  .....iCCPICC pro
+00000030: 6669 6c65 0000 2891 7d91 3d48 c340 1cc5  file..(.}.=H.@..
+00000040: 5fd3 968a 5404 eda0 e290 a13a 5910 1571  _...T......:Y..q
+					</code></pre>
+					<pre style="width: 100%"><code data-trim class="language-plaintext">
+$ xxd b.jpg | head
+00000000: ffd8 ffe0 0010 4a46 4946 0001 0102 0076  ......JFIF.....v
+00000010: 0076 0000 fffe 0013 4372 6561 7465 6420  .v......Created
+00000020: 7769 7468 2047 494d 50ff e202 b049 4343  with GIMP....ICC
+00000030: 5f50 524f 4649 4c45 0001 0100 0002 a06c  _PROFILE.......l
+00000040: 636d 7304 3000 006d 6e74 7252 4742 2058  cms.0..mntrRGB X
+					</code></pre>
+				</section>
+				<section>
+					<h3>010 Editor</h3>
+				</section>
+				<section>
+					<h3>Mention fuzzing</h3>
+					<ul>
+						<li>Formats are very complex</li>
+						<li>(Unfortunately) great source of bugs</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Chunk vs. pointer files</h3>
+					Paint on the whiteboard Mattias!
+				</section>
+				<section>
+					<h3>ZIP files</h3>
+					<ul>
+						<li class="fragment">Archive format to store files</li>
+						<li class="fragment">Also compression</li>
+						<li class="fragment">Stores files (and symlinks)</li>
+						<li class="fragment">Binary pointer based format. Read from the back</li>
+						<li class="fragment">Everything is a ZIP: .zip, .jar, .docx, .apk, .epub, ...</li>
+					</ul>
+				</section>
+				<section>
+					<h3>ZIP format</h3>
+					<img src="./zip.png">
+				</section>
+				<section>
+					<h3>Funny things with ZIP files</h3>
+					<ul>
+						<li class="fragment">Name of file in 2 places</li>
+						<li class="fragment">Can contain symlinks</li>
+						<li class="fragment">Pointer formats can do weird stuff...</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Funny ZIP files</h3>
+					<ul>
+						<li class="fragment"><a href="https://alf.nu/ZipQuine">ZIP Quine</a></li>
+						<li class="fragment"><a href="https://www.bamsoftware.com/hacks/zipbomb/">ZIP Bomb</a></li>
+						<ul>
+							<li class="fragment">10 MB -> 281 TB</li>
+							<li class="fragment">Overlapping parts</li>
+						</ul>
+						<li class="fragment">abstract.zip</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Different parsers, same file(?)</h3>
+					<ul>
+						<li>How to find the EOCD in zip?</li>
+						<li class="fragment">Several approaches in practice:</li>
+						<ul>
+							<li class="fragment">End first</li>
+							<li class="fragment">Start first</li>
+							<li class="fragment">Stream style</li>
+							<li class="fragment">Aggressive style</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h3>Enter: abstract.zip</h3>
+					<img style="max-height: 50vh;" src="./abstract.zip.png">
+				</section>
+				<section>
+					<h3>Same problem, other formats</h3>
+					<ul>
+						<li class="fragment">HTTP Request Smuggling: <a href="https://portswigger.net/web-security/request-smuggling">Link 1</a>, <a href="https://github.com/mattiasgrenfeldt/bachelors-thesis-http-request-smuggling">Link 2</a></li>
+						<li class="fragment"><a href="https://labs.bishopfox.com/tech-blog/an-exploration-of-json-interoperability-vulnerabilities">JSON</a></li>
+						<pre class="fragment"><code data-trim class="language-js">
+o = {"x": 1, "x": -1}; o["x"] = ?
+						</code></pre>
+						<li class="fragment"><a href="https://www.youtube.com/watch?v=D1S-G8rJrEk">URLs</a></li>
+						<pre class="fragment"><code data-trim class="language-plaintext">
+http://1.1.1.1 &@2.2.2.2# @3.3.3.3/
+						</code></pre>
+						<li class="fragment">There are many more...</li>
+					</ul>
+				</section>
+				<section>
+					<h3>The reveal</h3>
+					<ul>
+						<li class="fragment">thefile is a...</li>
+						<li class="fragment">PNG, concatenated with a...</li>
+						<li class="fragment">ZIP file, containing...</li>
+						<li class="fragment">Java .class and manifest (.jar), and...</li>
+						<li class="fragment">a __main__.py file!</li>
+						<li class="fragment">General term: Polyglot</li>
+					</ul>
+				</section>
+				<section>
+					<h3>References: file formats</h3>
+					<ul>
+						<li>ZIP files:</li>
+						<ul>
+							<li><a href="https://www.youtube.com/watch?v=X7j2sisMKzk">Hacking Livestream #53: The ZIP file format</a></li>
+							<li><a href="https://gynvael.coldwind.pl/download.php?f=TenThousandSecurityPitfalls_theZIPfileFormat.pdf">Ten thousand security pitfalls: The ZIP file format.</a></li>
+						</ul>
+						<li><a href="https://corkami.github.io/">Corkami: Format posters and strange files</a></li>
+						<li><a href="https://www.youtube.com/watch?v=-dyLxsr_f_w">Hacking Livestream #42: Binary stuff with Ange Albertini</a></li>
+					</ul>
+				</section>
+				<section>
+					Slides: <br>
+					<a href="https://royalroppers.team/meetups/file-formats-2022-05-19/">royalroppers.team/meetups/file-formats-2022-05-19/</a>
+				</section>
+			</div>
+		</div>
+
+		<script src="../reveal/dist/reveal.js"></script>
+		<script src="../reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealHighlight ]
+			});
+		</script>
+	</body>
+</html>
