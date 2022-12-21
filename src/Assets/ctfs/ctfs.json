@@ -1,6 +1,13 @@
 {
     "ctfs": [
         {
+            "ctf_name": "Crate-CTF 2022",
+            "description": "Crate-CTF is a yearly competition hosted by the Swedish Defence Research Agency.",
+            "link": "https://www.foi.se/forskning/informationssakerhet/crate---sveriges-nationella-cyberanlaggning-for-totalforsvaret/crate-ctf---en-tavling-i-cybersakerhet/tavlingsresultat-2022-11-26.html",
+            "logo": "/foi_logo_svg.svg",
+            "place": "1"
+        },
+        {
             "ctf_name": "Undutmaningen 2022",
             "description": "Swedish CTF organized by FRA, MUST and SÄPO. First time it was organized.",
             "link": "https://undutmaning.se/",
