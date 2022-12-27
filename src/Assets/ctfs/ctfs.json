@@ -50,13 +50,6 @@
             "place": "3"
         },
         {
-            "ctf_name": "VU CYBERTHON 2022",
-            "description": "Lithuanian CTF held during a conference.",
-            "link": "https://ctftime.org/event/1518",
-            "logo": "http://ctftime.org/media/cache/35/bd/35bd0e4aaa188e35e0d4e57416065e81.png",
-            "place": "7"
-        },
-        {
             "ctf_name": "Insomni'hack teaser 2022",
             "description": "Qualifier for the onsite CTF during the Insomni'hack conference.",
             "link": "https://ctftime.org/event/1505",
