@@ -1,6 +1,13 @@
 {
     "ctfs": [
         {
+            "ctf_name": "Crate-CTF 2025",
+            "description": "A competition hosted by FOI (Swedish Defence Research Agency)",
+            "link": "https://ctftime.org/event/2838",
+            "logo": "https://ctftime.org/media/cache/b2/dc/b2dce7812b61c45e3dc7e3f0bbd2e961.png",
+            "place": "2"
+        },
+        {
             "ctf_name": "snakeCTF 2025 Quals",
             "description": "CTF organized by MadrHacks, the ethical hacking team of the University of Udine",
             "link": "https://snakectf.org/",
